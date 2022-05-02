@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 17px;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(183, 233, 240);
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(89, 198, 212);
+}
+
+h1 {
+    padding: 1rem 1rem;
+    color: rgb(220, 245, 252);
+}
+
+nav {
+    display: grid;
+    place-items: center right;
+}
+
+nav > ul {
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    padding: 1rem 1rem;
+    background-color: rgb(220, 245, 252);
+    font-weight: bold;
+    margin-right: 1.5rem;
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+}
+
+nav > ul > li > a:hover {
+    background-color: white;
+    color: rgb(68, 148, 158);
+}
+
+#containerr {
+    display: grid;
+    place-items: center;
+    background-color: rgb(89, 198, 212);
+    padding: 4rem 32rem;
+}
+
+.title-container h2 {
+    color: rgb(220, 245, 252);
+    font-size: 5rem;
+}
+
+.title-container p {
+    font-size: 1rem;
+    color: rgb(220, 245, 252);
+}
+
+#about {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 40px 0px;
+}
+
+#about > h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem 4rem;
+    font-size: 2.5rem;
+}
+
+#about > h3 {
+    line-height: 3;
+    margin: 1rem 26rem 0rem 26rem;
+}
+
+#about > p {
+    margin: 1 23rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+#portfolio {
+    display: grid center;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 10px;
+    background-color: rgb(255, 230, 233);
+    padding: 3rem;
+}
+
+#portfolio > div {
+    margin: 0rem 2rem;
+    padding: 2rem 4rem;
+    background-color: white;
+    border: 10px solid rgb(255, 212, 221);
+    border-radius: 10px;
+}
+
+#portfolio > div > h2 {
+    padding: 1rem 0rem;
+    font-size: 2rem;
+}
+
+#portfolio > div > p {
+    line-height: 1.5;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+}
+
+button {
+    background-color: rgb(254, 197, 208);
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 4.5rem;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.button > a {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#experience {
+    background-color: white;
+    margin: 10px 0px;
+    padding: 40px 0px;
+}
+
+#experience > h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0rem 4rem;
+    font-size: 2.5rem;
+}
+
+footer {
+    color: white;
+    background-color: rgb(89, 198, 212);
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        display: grid;
+        background-color: rgb(89, 198, 212);
+    }
+}
+
